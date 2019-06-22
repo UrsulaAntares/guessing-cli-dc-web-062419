@@ -57,7 +57,7 @@ def run_guessing_game
       puts "The computer guessed #{right_number}."
     end
     input = gets.chomp
-    break
+    break if input == "exit"
   end
   puts "Goodbye!"
 end
