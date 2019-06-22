@@ -53,13 +53,11 @@ def run_guessing_game
  # binding.pry
     if input.to_i == right_number
       puts "You guessed the correct number!"
-      input = gets.chomp
     else
       puts "The computer guessed #{right_number}."
-      break
     end
     input = gets.chomp
-#    right_number = 1 + rand(6) 
+    break
   end
   puts "Goodbye!"
 end
